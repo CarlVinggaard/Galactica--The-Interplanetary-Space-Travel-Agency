@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/*------ MENU BAR ------*/
+.menubar {
+    background: linear-gradient(0.25turn, #EB48E4, #EC2424);
+    height: 75px;
+    width: 100%;
+    font-size: 24px;
+    display: block;
+}
+
+.menubar ul li a {
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.logo {
+    background: url(../images/nasa-vector-logo.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.navbar {
+    position: absolute;
+    float: right;
+    margin-right: 8%;
+}
