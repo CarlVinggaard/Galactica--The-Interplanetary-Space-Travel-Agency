@@ -7,14 +7,17 @@
 
         <link href="assets/css/style.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
         <script src="https://kit.fontawesome.com/d9c8a97a10.js" crossorigin="anonymous"></script>
-
+        
         <title>Document</title>
     </head>
     <body>
         <header>
-            <div class="row no-gutters menubar">
-                <a href="index.html" class="col-4 logo"></a>
+            <div class="container-fluid menubar">
+                <div class="col-4 container">
+                    <a href="index.html" class="logo"></a>
+                </div>
                 <div class="col-8">
                     <nav class="navbar list-inline">
                         <ul class="menu">
@@ -28,14 +31,109 @@
             </div>
         </header>
             
-        <section>
+        <div class="row container-fluid">
+            <div class="col-12">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="hero-image">
+                                    <h1>Explore Mars</h1>
+                                    <p>The colonies on Mars offer many exciting activities for visitors, including low gravity hiking and sandboarding. Book your trip today!</p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">1</li>
+                            <li class="glide__slide">2</li>
+                        </ul>
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="aboutus">
         </section>
-            
+
+        <section class="journey-section section">
+            <div class="row">
+                <h1 class="section-heading uppercase">Try one of our exciting journeys</h1>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="card-heading-bg">
+                            <h2 class="card-heading"><i class="fas fa-moon"></i> Walk the Moon</h2>
+                        </div>
+                        <div class="col-12">
+                            <p class="prod-description">Go for low-gravity walk, get the best 100% view of the earth or explore the eternal night of the dark side of the moon.</p>
+                        </div>
+                        <div class="col text-center">
+                            <button href="/" class="btn-readmore uppercase">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="card-heading-bg">
+                            <h2 class="card-heading"><i class="fas fa-globe"></i> Explore Mars</h2>
+                        </div>
+                        <div class="col-12">
+                            <p class="prod-description">Climb the highest mountain in the solar system or sandboard in the red dunes of the desert.</p>
+                        </div>
+                        <div class="col text-center">
+                            <button href="/" class="btn-readmore uppercase">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="card-heading-bg">
+                            <h2 class="card-heading"><i class="fas fa-satellite"></i> Visit the ISS</h2>
+                        </div>
+                        <div class="col-12">
+                            <p class="prod-description">Live as an astronaut for a day and feel the joy of weightlessness!</p>
+                        </div>
+                        <div class="col text-center">
+                            <button href="/" class="btn-readmore uppercase">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology">
+            <div class="overlay section">
+                <div class="row">
+                    <div class="col-10">
+                        <h1 class="technology-heading uppercase">WE ARE THE SAFEST SPACE TRAVEL AGENCY ON THE PLANET</h1>
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-rocket rocket-icon"></i>
+                        <p class="technology-text">We work only with the best launch providers. The well-tested rocket technology has successfully launched humans into space for 25 years.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-cta">
+        </section>
+
         <footer>
         </footer>
             
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+        <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+        <script>
+            new Glide('.glide', {type: 'Carousel', startAt: 0, perView: 1}).mount({ Autoplay, Images })
+        </script>   
+    
     </body>
 </html>
