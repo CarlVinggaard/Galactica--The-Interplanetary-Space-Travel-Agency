@@ -12,10 +12,6 @@ html {
     margin: 0;
 }
 
-p {
-    padding: 0 10px 0 0;
-}
-
 .section {
     padding: 0 8%;
 }
@@ -93,10 +89,7 @@ p {
 }
 
 .logo {
-    background: url(../images/nasa-vector-logo.svg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url(../images/nasa-vector-logo.svg) no-repeat;
 }
 
 .menu li {
@@ -106,6 +99,37 @@ p {
 .navbar {
     position: absolute;
     float: right;
+}
+
+/*------ SLIDER ------*/
+
+.hero-image {
+    width: 100%;
+    padding: 5% 5%;
+    height: 500px;
+    color: rgb(218, 9, 9);
+    font-weight: 500;
+}
+
+.mars-image {
+    background: url(../images/mars.jpg) no-repeat;
+    background-size: 100%;
+
+}
+
+.iss-image {
+    background: url(../images/mars.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.moon-image {
+    background: url(../images/mars.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.hero-heading {
+    font-size: 60px;
+    padding-left: 15px;
 }
 
 /*------ JOURNEY SECTION ------*/
@@ -143,4 +167,15 @@ p {
     color: white;
     font-size: 32px;
     margin: 20px 0 10px 0;
+}
+
+/*------ FOOTER ------*/
+
+footer {
+    height: 250px;
+}
+
+.socials {
+    color: #EB48E4;
+    font-size: 24px;
 }
