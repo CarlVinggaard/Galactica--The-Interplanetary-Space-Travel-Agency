@@ -14,11 +14,12 @@
         
         <title>Document</title>
     </head>
+
     <body>
         <header>
-            <div class="container-fluid menubar">
+            <div class="row container-fluid menubar">
                 <div class="col-4 container">
-                    <a href="index.html" class="logo"></a>
+                    <a href="index.html"><img src="assets/images/nasa-logo.jpg" class="logo" alt="Galactica logo"></a>
                 </div>
                 <div class="col-8">
                     <nav class="navbar list-inline">
@@ -32,7 +33,8 @@
                 </div>
             </div>
         </header>
-            
+        
+        <!-- SLIDER -->
         <div class="container-fluid p-0">
                 <div class="glide">
                     <div class="glide__track" data-glide-el="track">
@@ -58,11 +60,7 @@
                         </ul>
                     </div>
 
-                    <!-- <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-                    </div> -->
-
+                    <!-- SLIDER CONTROLLER -->
                      <div class="glide__bullets" data-glide-el="controls[nav]">
                         <button class="glide__bullet" data-glide-dir="=0"></button>
                         <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -72,6 +70,19 @@
         </div>
         
         <section class="aboutus">
+            <div class="row">
+                <div class="about-card product-card">
+                    <div class="row">
+                        <div class="col-7">
+                            <h2>WE BELIEVE IN A FUTURE BEYOND THE STARS</h2>
+                            <p>Galactica travels have successfully brought people to the Moon, Mars and the ISS for more than 10 years. We were founded on a vision of sharing the fantastical experiences of space with everyone.</p>
+                        </div>
+                        <div class="col-5">
+                            <img src="assets/images/mars.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="journey-section section">
@@ -136,15 +147,48 @@
         </section>
 
         <section class="bottom-cta">
+            <div class="row">
+                <div class="about-card product-card">
+                    <div class="row">
+                        <div class="col-7">
+                            <h2>Our customers are always satisfied!</h2>
+                            <h5>Want to become one of them?</h5>
+                        </div>
+                        <div class="col-5">
+                            <div class="cta-card">
+                                ORDER NOW
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
             <div class="row">
-                <div class="socials col-4">
-                    <p><a href="https://facebook.com" target=_blank><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com" target=_blank><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com" target=_blank><i class="fab fa-instagram"></i></a>
-                    <a href="https://youtube.com" target=_blank><i class="fab fa-youtube"></i></a></p>
+                <div class="col-3">
+                    <img src="assets/images/nasa-logo.jpg" class="logo" alt="Galactica logo">
+                </div>
+                <div class="socials col-1">
+                    <p>
+                        <a href="https://facebook.com" target=_blank><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target=_blank><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target=_blank><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target=_blank><i class="fab fa-youtube"></i></a>
+                    </p>
+                </div>
+                <div class="col-4 footer-menu">
+                    <span><a href="index.html"><h5>HOME</h5></a></span>
+                    <span><a href="jouneys.html"><h5>JOURNEYS</h5></a></span>
+                    <span><a href="about.html"><h5>ABOUT</h5></a></span>
+                    <span><a href="order.html"><h5>ORDER</h5></a></span>
+                </div>
+                <div class="col-4">
+                    <div class="contact-card">
+                        <h5 class="contact-heading uppercase">Contact us</h5>
+                        <p><i class="fas fa-phone"></i> +1-202-555-0102</p>
+                        <p><i class="fas fa-envelope"></i> service@galacticatravels.com</p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -156,7 +200,13 @@
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
         <script>
-            new Glide('.glide').mount()
+            const config = {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 8000,
+                animationDuration: 2000
+            }
+            new Glide('.glide', config).mount()
         </script>   
     
     </body>

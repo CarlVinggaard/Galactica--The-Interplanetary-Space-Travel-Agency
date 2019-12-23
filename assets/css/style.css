@@ -12,6 +12,11 @@ html {
     margin: 0;
 }
 
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .section {
     padding: 0 8%;
 }
@@ -27,8 +32,12 @@ html {
     text-align: center;
 }
 
-/*------ PRODUCT CARDS ------*/
+a:hover {
+    text-decoration: none !important;
+    color: #EC2424 !important;
+}
 
+/*------ CARDS ------*/
 
 .product-card {
     border: 0;
@@ -38,17 +47,107 @@ html {
     min-height: 300px;
 }
 
+.card-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*------ MENU BAR ------*/
+
+.menubar {
+    background: linear-gradient(0.25turn, #EB48E4, #EC2424);
+    height: 75px;
+    width: 100%;
+    font-size: 24px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* This should only be there when scrolling, not at the top */
+}
+
+.menubar ul li a {
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.logo {
+    max-height: 75px;
+}
+
+.menu {
+    position: absolute;
+    right: 5%;
+    top: 20px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.navbar {
+    position: absolute;
+}
+
+/*------ SLIDER ------*/
+
+.hero-image {
+    width: 100%;
+    padding: 5% 5%;
+    height: 80vh;
+    color: rgb(218, 9, 9);
+    font-weight: 500;
+}
+
+.mars-image {
+    background: url(../images/mars.jpg) no-repeat center center;
+    background-size: 100%;
+
+}
+
+.iss-image {
+    background: url(../images/mars.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.moon-image {
+    background: url(../images/mars.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+.hero-heading {
+    font-size: 60px;
+    padding-left: 15px;
+}
+
+/*------ ABOUT US ------*/
+
+.about-card {
+    margin: 50px 8%;
+    padding: 30px 5%;
+}
+
+.col-5 img {
+    width: 100%;
+    max-height: 300px;
+}
+
+/*------ JOURNEY SECTION ------*/
+
+.journey-section {
+    margin: 50px 0;
+}
+
 .card-heading-bg {
     background: linear-gradient(0.25turn, #EB48E4, #EC2424);
     height: 20%;
     border-radius: 10px 10px 0 0;
     padding: 10px;
-}
-
-.card-heading {
     color: white;
-    text-align: center;
-    margin: 0 auto;
 }
 
 .prod-description {
@@ -66,76 +165,6 @@ html {
     padding: 0 5%;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     color: white;
-}
-
-/*------ MENU BAR ------*/
-
-.menubar {
-    background: linear-gradient(0.25turn, #EB48E4, #EC2424);
-    height: 75px;
-    width: 100%;
-    font-size: 24px;
-    display: block;
-}
-
-.menubar ul li a {
-    color: white;
-    margin: 0 10px 0 10px;
-}
-
-.active {
-    text-decoration: underline;
-    text-underline-position: under;
-}
-
-.logo {
-    background: url(../images/nasa-vector-logo.svg) no-repeat;
-}
-
-.menu li {
-    list-style-type: none;
-}
-
-.navbar {
-    position: absolute;
-    float: right;
-}
-
-/*------ SLIDER ------*/
-
-.hero-image {
-    width: 100%;
-    padding: 5% 5%;
-    height: 500px;
-    color: rgb(218, 9, 9);
-    font-weight: 500;
-}
-
-.mars-image {
-    background: url(../images/mars.jpg) no-repeat;
-    background-size: 100%;
-
-}
-
-.iss-image {
-    background: url(../images/mars.jpg) no-repeat;
-    background-size: 100%;
-}
-
-.moon-image {
-    background: url(../images/mars.jpg) no-repeat;
-    background-size: 100%;
-}
-
-.hero-heading {
-    font-size: 60px;
-    padding-left: 15px;
-}
-
-/*------ JOURNEY SECTION ------*/
-
-.journey-section {
-    margin: 50px 0;
 }
 
 /*------ TECHNOLOGY ------*/
@@ -173,9 +202,63 @@ html {
 
 footer {
     height: 250px;
+    padding: 30px 10%;
+    background-color: #FFAC2F;
+    color: #007bff;
+}
+
+@media (min-width: 1140px) {
+    footer {
+        padding: 30px 15%;
+    }
+}
+
+.footer-menu {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-menu span {
+    display: block;
+    margin: 0 auto;
 }
 
 .socials {
-    color: #EB48E4;
+    padding-top: 20px;
+}
+
+.socials a {
+    color: #007bff;
     font-size: 24px;
+    display: block;
+    text-align: center;
+}
+
+.socials a:hover {
+    color: #EC2424;
+}
+
+.contact-card {
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 20px 30px 4px 30px;
+    font-size: 1.1rem;
+}
+
+.contact-heading {
+    margin-bottom: 20px;
+}
+
+/*------ CTA ------*/
+
+.cta-card {
+    color: white;
+    background-color: #FFAC2F;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px 30px 4px 30px;
+    font-size: 1.1rem;
 }
