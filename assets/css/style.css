@@ -29,7 +29,6 @@ html {
 
 .section-heading {
     margin: 0 auto 25px auto;
-    text-align: center;
 }
 
 a:hover {
@@ -54,20 +53,20 @@ a:hover {
 
 /*------ MENU BAR ------*/
 
-.menubar {
+.navbar {
     background: linear-gradient(0.25turn, #EB48E4, #EC2424);
     height: 75px;
-    width: 100%;
-    font-size: 24px;
-    top: 0;
-    position: fixed;
+    font-size: 20px;
     z-index: 1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* This should only be there when scrolling, not at the top */
 }
 
-.menubar ul li a {
+.navbar ul li a {
     color: white;
-    margin: 0 10px 0 10px;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
 }
 
 .active {
@@ -76,22 +75,18 @@ a:hover {
 }
 
 .logo {
-    max-height: 75px;
+    max-height: 59px;
 }
 
 .menu {
     position: absolute;
     right: 5%;
-    top: 20px;
 }
 
+/*
 .menu li {
     list-style-type: none;
-}
-
-.navbar {
-    position: absolute;
-}
+} */
 
 /*------ SLIDER ------*/
 
@@ -202,7 +197,7 @@ a:hover {
 
 footer {
     height: 250px;
-    padding: 30px 10%;
+    padding: 30px 5%;
     background-color: #FFAC2F;
     color: #007bff;
 }
@@ -210,6 +205,12 @@ footer {
 @media (min-width: 1140px) {
     footer {
         padding: 30px 15%;
+    }
+}
+
+@media (min-width: 6400px) {
+    footer {
+        padding: 30px 10%;
     }
 }
 
