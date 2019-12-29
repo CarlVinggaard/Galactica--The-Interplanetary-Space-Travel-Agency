@@ -61,12 +61,35 @@ a:hover {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* This should only be there when scrolling, not at the top */
 }
 
-.navbar ul li a {
-    color: white;
-}
-
 .navbar .navbar-toggler {
     border: 0;
+    color: white !important;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .show > ul {
+        background: linear-gradient(0.25turn, #EB48E4, #EC2424);
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+    }
+
+    .show {
+        position: absolute !important;
+        top: 75px;
+        left: 0;
+    }
+}
+
+
+a.nav-link {
+    color: white !important;
 }
 
 .active {
@@ -76,17 +99,13 @@ a:hover {
 
 .logo {
     max-height: 59px;
+    margin: 0 auto;
 }
 
-.menu {
-    position: absolute;
-    right: 5%;
+.img-container {
+    text-align: center;
+    padding-bottom: 30px;
 }
-
-/*
-.menu li {
-    list-style-type: none;
-} */
 
 /*------ SLIDER ------*/
 
@@ -196,21 +215,23 @@ a:hover {
 /*------ FOOTER ------*/
 
 footer {
-    height: 250px;
     padding: 30px 5%;
     background-color: #FFAC2F;
     color: #007bff;
+    font-size: 0.9rem;
 }
 
 @media (min-width: 1140px) {
     footer {
-        padding: 30px 15%;
+        padding: 30px 12%;
+        font-size: 1rem;
     }
 }
 
-@media (min-width: 6400px) {
+@media (min-width: 640px) and (max-width: 1140px) {
     footer {
-        padding: 30px 10%;
+        padding: 30px 8%;
+        font-size: 1rem;
     }
 }
 
@@ -246,7 +267,6 @@ footer {
     width: 100%;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     padding: 20px 30px 4px 30px;
-    font-size: 1.1rem;
 }
 
 .contact-heading {
