@@ -137,24 +137,25 @@ a.nav-link {
 .hero-image {
     width: 100%;
     height: 80vh;
-    color: rgb(218, 9, 9);
     font-weight: 500;
 }
 
 .mars-image {
-    background: url(../images/mars.jpg) no-repeat center center;
+    background: url(../images/mars_tourists.jpeg) no-repeat center center;
     background-size: 100%;
-
+    color: red;
 }
 
 .iss-image {
-    background: url(../images/mars.jpg) no-repeat center center;
+    background: url(../images/iss_tourist.jpeg) no-repeat center center;
     background-size: 100%;
+    color: white;
 }
 
 .moon-image {
-    background: url(../images/mars.jpg) no-repeat center center;
+    background: url(../images/moon_tourists.jpg) no-repeat center center;
     background-size: 100%;
+    color: white;
 }
 
 .hero-heading {
@@ -203,7 +204,7 @@ a.nav-link {
     background: url(../images/spacex_bfr_spaceship.jpg) no-repeat;
     background-size: 100%;
     height: 500px;
-    max-height: 56vw;
+    max-height: 53vw;
     color: white;
 }
 
