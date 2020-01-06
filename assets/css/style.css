@@ -72,9 +72,8 @@ img {
 }
 
 .wide-card {
-        margin: 50px 0;
-        padding: 30px 5%;
-
+    margin: 50px 0;
+    padding: 30px 5%;
 }
 
 .card-heading {
@@ -179,7 +178,7 @@ a.nav-link {
     margin: 50px 0;
 }
 
-.card-heading-bg {
+.journey-heading-bg {
     background: linear-gradient(0.25turn, #EB48E4, #EC2424);
     height: 20%;
     border-radius: 10px 10px 0 0;
@@ -222,7 +221,6 @@ a.nav-link {
 .technology-heading {
     font-weight: bold;
     color: white;
-    margin: 50px 0 0 0;
 }
 
 .technology-text {
@@ -305,4 +303,18 @@ footer {
     width: 100%;
     padding: 20px 30px 4px 30px;
     font-size: 1.1rem;
+}
+
+/*--- ORDER PAGE ---*/
+
+label {
+    color: gray;
+}
+
+.form-heading-bg {
+    background: linear-gradient(0.25turn, #F09643, #C7EA9E, #4CF5E1);
+    height: 20%;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    color: white;
 }
