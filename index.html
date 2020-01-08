@@ -7,7 +7,6 @@
 
         <link href="assets/css/style.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/glide.core.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/glide.theme.min.css">
         <script src="https://kit.fontawesome.com/d9c8a97a10.js" crossorigin="anonymous"></script>
@@ -22,16 +21,16 @@
                     <a class="navbar-brand" href="index.html"><img src="assets/images/nasa-logo.jpg" class="logo my-0 mx-auto" alt="Galactica logo"></a>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="col-12 col-md-8 collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item mr-4 uppercase active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item mr-4 uppercase"><a class="nav-link" href="journeys.html">Journeys</a></li>
-                        <li class="nav-item mr-4 uppercase"><a class="nav-link" href="order.html">Order</a></li>
-                        <li class="nav-item mr-4 uppercase"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item mr-4 uppercase"><a class="nav-link" href="journeys.html">Journey Catalogue</a></li>
+                        <li class="nav-item mr-4 uppercase"><a class="nav-link" href="order.html"><i class="fas fa-shopping-cart mr-2"></i>Order</a></li>
                     </ul>
                 </div>
             </nav>
@@ -43,21 +42,31 @@
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="glide__slide">
-                                <div class="hero-image mars-image p-5">
-                                    <h1 class="hero-heading">Explore Mars</h1>
-                                    <p class="col-6">The colonies on Mars offer many exciting activities for visitors, including low gravity hiking and sandboarding. Book your trip today!</p>
+                                <div class="row hero-image mars-image pl-5 pt-5">
+                                    <div class="col-12">
+                                        <h1 class="hero-heading col-12">Explore Mars</h1>
+                                        <p class="col-6">The colonies on Mars offer many exciting activities for visitors, including low gravity hiking and sandboarding. 
+                                            Book your trip today!</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="glide__slide">
-                                <div class="hero-image iss-image p-5">
-                                    <h1 class="hero-heading">Feel the thrill of weightlessness</h1>
-                                    <p class="col-6">The tourist section of the ISS is a unique place of fun and experimentation. Get your tickets here!</p>
+                                <div class="row hero-image iss-image pl-5 pt-5">
+                                    <div class="col-12">
+                                        <h1 class="hero-heading col-12">Feel the thrill of weightlessness</h1>
+                                        <p class="col-6">The tourist section of the ISS is a unique place of fun and experimentation. Get your tickets here!</p>
+                                    </div>
                                 </div>
                             </li>
                             <li class="glide__slide">
-                                <div class="hero-image moon-image p-5">
-                                    <h1 class="hero-heading">Visit the Sea of Tranquility</h1>
-                                    <p class="col-6">Visit the historic site where Neil Armstrong took the very first human footsteps on the moon. Learn about the history of human exploration on the moon and the life of the first settlers.</p>
+                                <div class="row hero-image moon-image text-right pl-5 pt-5">
+                                    <div class="col-12">
+                                        <div class="row justify-content-end">
+                                            <h1 class="hero-heading col-12">Visit the Sea of Tranquility</h1>
+                                            <p class="col-6">Visit the historic site where Neil Armstrong took the very first human footsteps on the moon. 
+                                                Learn about the history of human exploration on the moon and the life of the first settlers.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -79,7 +88,8 @@
                     <div class="row">
                         <div class="col-12 col-md-7">
                             <h2>WE BELIEVE IN A FUTURE BEYOND THE STARS</h2>
-                            <p>Galactica travels have successfully brought people to the Moon, Mars and the ISS for more than 10 years. We were founded on a vision of sharing the fantastical experiences of space with everyone.</p>
+                            <p>Galactica travels have successfully brought people to the Moon, Mars and the ISS for more than 10 years. We were founded on a vision 
+                                of sharing the fantastical experiences of space with everyone.</p>
                         </div>
                         <div class="col-12 col-md-5">
                             <img src="assets/images/mars.jpg"></img>
@@ -200,9 +210,12 @@
             </div>
         </footer>
             
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+            crossorigin="anonymous"></script>
     
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
@@ -210,7 +223,7 @@
             const config = {
                 type: 'carousel',
                 perView: 1,
-                autoplay: 8000,
+                autoplay: 0,
                 animationDuration: 2000
             }
             new Glide('.glide', config).mount()

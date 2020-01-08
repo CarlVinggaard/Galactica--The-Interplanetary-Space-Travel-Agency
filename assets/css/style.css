@@ -57,31 +57,6 @@ img {
     min-height: 300px;
 }
 
-/* OLD RESPONSIVE SPACING, WILL BE DELETED
-/* @media (min-width: 1200px) {
-    .wide-card {
-        margin: 30px 8%;
-        padding: 30px 5%;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    .wide-card {
-        margin: 30px 5%;
-        padding: 30px 5%;
-    }
-}
-
-.wide-card {
-    margin: 30px 0;
-    padding: 30px 5%;
-} 
-
-.card-heading {
-    text-align: center;
-    margin: 0 auto;
-} */
-
 /*------ MENU BAR ------*/
 
 .navbar {
@@ -126,6 +101,11 @@ a.nav-link {
 .active {
     text-decoration: underline;
     text-underline-position: under;
+}
+
+.order-icon {
+    margin-right: 1%;
+    font-size: 16px;
 }
 
 .logo {
