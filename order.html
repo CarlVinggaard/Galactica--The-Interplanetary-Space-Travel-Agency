@@ -23,7 +23,7 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-light">
-                <div class="col-4 container">
+                <div class="col-4">
                     <a class="navbar-brand" href="index.html"><img src="assets/images/nasa-logo.jpg" class="logo my-0 mx-auto" alt="Galactica logo"></a>
                 </div>
 
@@ -42,7 +42,7 @@
         </header>
         
         <div class="section container-fluid">
-            <div class="col-12 col-md-8 col-lg-6 mx-auto my-5">
+            <div class="col-12 col-md-8 col-xl-6 mx-auto my-5">
                 <div class="product-card">
                     
                     <div class="row form-heading-bg p-4">
@@ -51,10 +51,10 @@
                         </div>
                     </div>
 
-                    <form action="/" class="px-4 py-4">
+                    <form class="px-4 py-4">
                         <div class="form-group">
                             <label for="journey">Which journey would you like?</label>
-                            <select class="form-control" id="journey">
+                            <select class="form-control" id="journey" required>
                                 <option>Walk the Moon</option>
                                 <option>Explore Mars</option>
                                 <option>Visit the ISS</option>
@@ -63,24 +63,24 @@
 
                         <div class="form-group">
                             <label for="fullname">Full name</label>
-                            <input type="text" class="form-control" id="fullname">
+                            <input type="text" class="form-control" id="fullname" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" required>
                         </div>
 
                         <div class="form-group">
                             <label for="people">How many people?</label>
-                            <input type="number" class="form-control" id="people">
+                            <input type="number" class="form-control" id="people" required>
                         </div>
 
                         <div class="form-group">
                             <label for="from">From</label>
-                            <input type="text" class="form-control" id="from">
+                            <input type="text" class="form-control" id="from" required>
                             <label for="to">To</label>
-                            <input type="text" class="form-control" id="to">
+                            <input type="text" class="form-control" id="to" required>
                         </div>
 
                         <div class="text-center">
