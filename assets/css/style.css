@@ -12,16 +12,29 @@ html {
     margin: 0;
 }
 
+/*------ GENERAL ------*/
+
 body {
     font-family: "Roboto" !important;
     font-weight: 300 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: "Exo" !important;
 }
 
-/*------ GENERAL ------*/
+h2, h3, h4, h5, h6 {
+    font-family: "Roboto" !important;
+    font-weight: 600;
+}
+
+.heading {
+        font-size: 1.8rem;
+    }
+
+.heading-2 {
+    font-size: 1.3rem;
+}
 
 .section {
     padding: 0 5%;
@@ -52,7 +65,7 @@ img {
     border-radius: 10px;
     width: 100%;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    min-height: 300px;
+    min-height: 200px;
 }
 
 /*------ MENU BAR ------*/
@@ -97,33 +110,31 @@ a.nav-link {
 
 .hero-image {
     width: 100%;
-    height: 80vh;
+    height: calc(100vh - 75px);
     margin-right: 0 !important;
     margin-left: 0 !important;
-    max-height: 65vw;
+    font-weight: 600;
 }
 
 .mars-image {
     background: url(../images/mars_tourists.jpeg) no-repeat center center;
-    background-size: 100%;
-    color: rgb(255, 63, 63)
+    color: rgb(255, 63, 63);
+    background-size: cover;
+    overflow: hidden;
 }
 
 .iss-image {
     background: url(../images/iss_tourist.jpeg) no-repeat center center;
-    background-size: 100%;
     color: white;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .moon-image {
     background: url(../images/moon_tourists.jpg) no-repeat center center;
-    background-size: 100%;
     color: white;
-}
-
-.hero-heading {
-    font-size: 60px;
-    padding-left: 15px;
+    background-size: cover;
+    overflow: hidden;
 }
 
 /*------ JOURNEY SECTION ------*/
@@ -138,11 +149,6 @@ a.nav-link {
     border-radius: 10px 10px 0 0;
     padding: 10px;
     color: white;
-}
-
-.prod-description {
-    min-height: 150px;
-    padding: 20px 10px 0 10px;
 }
 
 .btn-readmore {
@@ -160,11 +166,12 @@ a.nav-link {
 /*------ TECHNOLOGY ------*/
 
 .technology {
-    background: url(../images/spacex_bfr_spaceship.jpg) no-repeat;
-    background-size: 100%;
-    height: 500px;
-    max-height: 53vw;
+    background: url(../images/spacex_bfr_spaceship.jpg) center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 450px;
     color: white;
+    font-weight: 500;
 }
 
 .overlay {
@@ -174,14 +181,9 @@ a.nav-link {
     height: 100%;
 }
 
-.technology-heading {
-    font-weight: bold;
-}
-
 .rocket-icon {
     color: white;
     font-size: 32px;
-    margin: 20px 0 10px 0;
 }
 
 /*------ FOOTER ------*/
@@ -235,6 +237,14 @@ label {
     .section {
         padding: 0 8%;
     }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .heading-2 {
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 1140px) {
@@ -251,6 +261,19 @@ label {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .prod-description {
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 960px) {
+    .technology-heading {
+        font-size: 1.6rem !important;
+    }
+}
+
+/* Styling of the dropdown menu, when navbar is collapsed */
 @media screen and (max-width: 768px) {
     .show > ul {
         background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
@@ -264,11 +287,5 @@ label {
         position: absolute !important;
         top: 75px;
         left: 0;
-    }
-}
-
-@media (max-width: 960px) {
-    .technology-heading {
-        font-size: 1.6rem !important;
     }
 }
