@@ -1,7 +1,7 @@
 /* ------ COLOR REFERENCE ------*/
-/* Main: linear-gradient(0.25turn, #EB48E4, #EC2424)
-/*
-/*
+/* Main: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
+/* Secondary: #FFAC2F
+/* Logo blue: #0033DC
 /*
 /* ------------*/
 
@@ -27,12 +27,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 5%;
 }
 
-@media (min-width: 576px) {
-    .section {
-        padding: 0 8%;
-    }
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -43,7 +37,7 @@ a {
 
 a:hover {
     text-decoration: none !important;
-    color: #EC2424 !important;
+    color: rgb(255, 63, 63) !important;
 }
 
 img {
@@ -64,7 +58,7 @@ img {
 /*------ MENU BAR ------*/
 
 .navbar {
-    background: linear-gradient(0.25turn, #EB48E4, #EC2424);
+    background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
     height: 75px;
     font-size: 20px;
     z-index: 1;
@@ -81,23 +75,6 @@ img {
     right: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .show > ul {
-        background: linear-gradient(0.25turn, #EB48E4, #EC2424);
-        padding: 0 20px;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
-    }
-
-    .show {
-        position: absolute !important;
-        top: 75px;
-        left: 0;
-    }
-}
-
-
 a.nav-link {
     color: white !important;
 }
@@ -113,7 +90,7 @@ a.nav-link {
 }
 
 .logo {
-    max-height: 59px;
+    max-height: 50px;
 }
 
 /*------ SLIDER ------*/
@@ -129,7 +106,7 @@ a.nav-link {
 .mars-image {
     background: url(../images/mars_tourists.jpeg) no-repeat center center;
     background-size: 100%;
-    color: red;
+    color: rgb(255, 63, 63)
 }
 
 .iss-image {
@@ -156,7 +133,7 @@ a.nav-link {
 }
 
 .journey-heading-bg {
-    background: linear-gradient(0.25turn, #EB48E4, #EC2424);
+    background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
     height: 20%;
     border-radius: 10px 10px 0 0;
     padding: 10px;
@@ -201,12 +178,6 @@ a.nav-link {
     font-weight: bold;
 }
 
-@media (max-width: 960px) {
-    .technology-heading {
-        font-size: 1.6rem !important;
-    }
-}
-
 .rocket-icon {
     color: white;
     font-size: 32px;
@@ -218,26 +189,12 @@ a.nav-link {
 footer {
     padding: 30px 5%;
     background-color: #FFAC2F;
-    color: #007bff;
+    color: #0033DC;
     font-size: 0.9rem;
 }
 
-@media (min-width: 1140px) {
-    footer {
-        padding: 30px 12%;
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 640px) and (max-width: 1140px) {
-    footer {
-        padding: 30px 8%;
-        font-size: 1rem;
-    }
-}
-
 .social {
-    color: #007bff !important;
+    color: #0033DC !important;
     font-size: 24px;
 }
 
@@ -270,4 +227,48 @@ label {
     height: 20%;
     border-radius: 10px 10px 0 0;
     color: white;
+}
+
+/*--- RESPONSIVE STYLES ---*/
+
+@media (min-width: 576px) {
+    .section {
+        padding: 0 8%;
+    }
+}
+
+@media (min-width: 1140px) {
+    footer {
+        padding: 30px 12%;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1140px) {
+    footer {
+        padding: 30px 8%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .show > ul {
+        background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+    }
+
+    .show {
+        position: absolute !important;
+        top: 75px;
+        left: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .technology-heading {
+        font-size: 1.6rem !important;
+    }
 }
