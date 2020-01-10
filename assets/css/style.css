@@ -41,10 +41,6 @@ h2, h3, h4, h5, h6 {
     font-size: 1.3rem;
 }
 
-.section {
-    padding: 0 5%;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -241,10 +237,6 @@ label {
 /*--- RESPONSIVE STYLES ---*/
 
 @media (min-width: 576px) {
-    .section {
-        padding: 0 8%;
-    }
-
     .heading {
         font-size: 2.5rem;
     }
