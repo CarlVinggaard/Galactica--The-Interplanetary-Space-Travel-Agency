@@ -64,8 +64,7 @@ img {
 .product-card {
     border: 0;
     border-radius: 10px;
-    width: 100%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    width: 100%;    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     min-height: 150px;
 }
 
@@ -269,6 +268,12 @@ label {
 @media (max-width: 960px) {
     .technology-heading {
         font-size: 1.6rem !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .journey-container {
+        max-width: 1200px;
     }
 }
 
