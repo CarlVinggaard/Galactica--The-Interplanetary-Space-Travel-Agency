@@ -271,8 +271,9 @@ label {
     }
 }
 
+/* This class exists to limit the width of sections on very wide screens */
 @media (min-width: 1400px) {
-    .journey-container {
+    .section-container {
         max-width: 1200px;
     }
 }
