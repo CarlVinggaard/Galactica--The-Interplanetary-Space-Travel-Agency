@@ -147,13 +147,16 @@ a.nav-link {
     color: white;
 }
 
-.btn-readmore {
+.btn-orange {
     background: #FFAC2F;
     border: 0;
     border-radius: 5px;
-    width: 150px;
     color: white;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.btn-readmore {
+    width: 150px;
 }
 
 /*------ TECHNOLOGY ------*/
