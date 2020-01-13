@@ -231,8 +231,7 @@ label {
 }
 
 .form-heading-bg {
-    background: linear-gradient(0.25turn, #F09643, #C7EA9E, #4CF5E1);
-    height: 20%;
+    background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
     border-radius: 10px 10px 0 0;
     color: white;
 }

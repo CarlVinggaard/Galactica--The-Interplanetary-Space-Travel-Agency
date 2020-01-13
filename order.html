@@ -13,7 +13,7 @@
 
         <link href="assets/css/style.css" type="text/css" rel="stylesheet">
         
-        <title>Document</title>
+        <title>Galactica Space Travel</title>
     </head>
 
     <body>
@@ -38,15 +38,22 @@
             </nav>
         </header>
         
-        <div class="main container-fluid">
+        <div class="main container-fluid my-5">
 
-            <div class="section row">
+            <section>
+                <div class="row justify-content-center my-2">
+                    <div class="col-12">
+                        <h1 class="text-center uppercase">Your next adventure starts here</h1>
+                    </div>                    
+                </div>
+
+            <div class="row">
                 <div class="col-12 col-md-8 col-xl-6 mx-auto my-5">
                     <div class="product-card">
-                        
+
                         <div class="form-heading-bg p-4">
                             <div class="col-12">
-                                <h3 class="card-heading">Choose your journey and fill in the details. We will be in touch, to arrange the details.</h3>
+                                <h2 class="heading-2">Choose your journey and fill in the details. We will be in touch, to arrange the details.</h2>
                             </div>
                         </div>
 
@@ -76,20 +83,55 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="from">From</label>
-                                <input type="text" class="form-control" id="from" required>
-                                <label for="to">To</label>
-                                <input type="text" class="form-control" id="to" required>
+                                <label for="spaceport">Which spaceport would you like to depart from? <br><strong>Note: Price will vary depending on your 
+                                    transportation options to the spaceport.</strong></label>
+                                <select class="form-control" id="spaceport" required>
+                                    <option>Barcelona</option>
+                                    <option>Beijing</option>
+                                    <option>Berlin</option>
+                                    <option>Chicago</option>
+                                    <option>Copenhagen</option>
+                                    <option>Dublin</option>
+                                    <option>Hong Kong</option>
+                                    <option>Houston</option>
+                                    <option>London</option>
+                                    <option>Los Angeles</option>
+                                    <option>Miami</option>
+                                    <option>Moscow</option>
+                                    <option>Mumbai</option>
+                                    <option>New York</option>
+                                    <option>Paris</option>
+                                    <option>Rio De Janeiro</option>
+                                    <option>Rome</option>
+                                    <option>San Diego</option>
+                                    <option>Seattle</option>
+                                    <option>Shanghai</option>
+                                    <option>Singapore</option>
+                                    <option>Taipei</option>
+                                    <option>Tel-Aviv</option>
+                                    <option>Tokyo</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <label for="from">From</label>
+                                    <input type="text" class="form-control" id="from" autocomplete="off" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="to">To</label>
+                                    <input type="text" class="form-control" id="to" autocomplete="off" required>
+                                </div>
                             </div>
 
                             <div class="text-center">
-                                <button type="submit" class="btn-readmore uppercase px-4 py-2 my-3">Contact me</button>
+                                <button type="submit" class="btn-order uppercase px-4 py-2 my-3">Contact me</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-
+            </section>
         </div>
 
         <footer>
