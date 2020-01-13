@@ -1,7 +1,7 @@
 /* ------ COLOR REFERENCE ------*/
-/* Main: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
-/* Secondary: #FFAC2F
-/* Logo blue: #0033DC
+/* Main (purple/red): linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
+/* Secondary (orange): #FFAC2F
+/* Logo (blue): #0033DC
 /*
 /* ------------*/
 
@@ -14,7 +14,7 @@ html {
 
 .main {
     padding: 0;
-    margin: 0;
+    margin-top: 75px; /* To avoid the navbar overlapping with the page */
 }
 
 /*------ GENERAL ------*/
@@ -45,21 +45,16 @@ h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-a {
-    color: white !important;
-}
-
-a:hover {
-    text-decoration: none !important;
-    color: rgb(255, 63, 63) !important;
-}
-
 img {
     max-width: 100%;
     overflow: hidden;
 }
 
-/*------ CARDS ------*/
+.note {
+    font-size: 0.8rem;
+}
+
+/*------ HOVERING CARDS ------*/
 
 .product-card {
     border: 0;
@@ -69,6 +64,34 @@ img {
     min-height: 150px;
 }
 
+.card-heading-bg {
+    background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+/*------ BUTTON STYLES ------*/
+
+.btn-orange {
+    background: #FFAC2F;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.btn-readmore {
+    width: 150px;
+}
+
+.btn-order {
+    background: #0033DC;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
 /*------ MENU BAR ------*/
 
 .navbar {
@@ -76,7 +99,10 @@ img {
     height: 75px;
     font-size: 20px;
     z-index: 1;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* This should only be there when scrolling, not at the top */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .navbar .navbar-toggler {
@@ -98,12 +124,7 @@ a.nav-link {
     text-underline-position: under;
 }
 
-.order-icon {
-    margin-right: 1%;
-    font-size: 16px;
-}
-
-.logo {
+.logo {                 
     max-height: 50px;
 }
 
@@ -118,8 +139,8 @@ a.nav-link {
 }
 
 .mars-image {
-    background: url(../images/mars_tourists.jpeg) no-repeat center center;
-    color: rgb(255, 63, 63);
+    background: url(../images/mars_tourists_new.jpg) no-repeat center center;
+    color: rgb(235, 50, 50);
     background-size: cover;
     overflow: hidden;
 }
@@ -138,29 +159,7 @@ a.nav-link {
     overflow: hidden;
 }
 
-/*------ JOURNEY SECTION ------*/
-
-.journey-heading-bg {
-    background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
-    height: 20%;
-    border-radius: 10px 10px 0 0;
-    padding: 10px;
-    color: white;
-}
-
-.btn-orange {
-    background: #FFAC2F;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
-.btn-readmore {
-    width: 150px;
-}
-
-/*------ TECHNOLOGY ------*/
+/*------ TECHNOLOGY SECTION ------*/
 
 .technology {
     background: url(../images/spacex_bfr_spaceship.jpg) center center no-repeat;
@@ -186,7 +185,7 @@ a.nav-link {
 /*------ FOOTER ------*/
 
 footer {
-    padding: 30px 5%;
+    /*padding: 30px 5%;*/
     background-color: #FFAC2F;
     color: #0033DC;
     font-size: 0.9rem;
@@ -206,37 +205,15 @@ footer {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-/*------ CTA ------*/
-
-.cta-card {
-    color: white;
-    background-color: #FFAC2F;
-    border-radius: 10px;
-    width: 100%;
-    font-size: 1.1rem;
-}
-
-.btn-order {
-    background: #0033DC;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
-
 /*--- ORDER PAGE ---*/
 
 label {
     color: gray;
 }
 
-.form-heading-bg {
-    background: linear-gradient(0.25turn, rgb(235, 72, 227), rgb(255, 63, 63));
-    border-radius: 10px 10px 0 0;
-    color: white;
-}
-
 /*--- RESPONSIVE STYLES ---*/
+
+/* @media queries are mainly used to make responsive font-sizes and setting the padding for the footer */
 
 @media (min-width: 576px) {
     .heading {
@@ -245,20 +222,6 @@ label {
 
     .heading-2 {
         font-size: 2rem;
-    }
-}
-
-@media (min-width: 1140px) {
-    footer {
-        padding: 30px 12%;
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 640px) and (max-width: 1140px) {
-    footer {
-        padding: 30px 8%;
-        font-size: 1rem;
     }
 }
 
@@ -293,7 +256,7 @@ label {
 
     .show {
         position: absolute !important;
-        top: 75px;
+        top: 74px; /* Navbar height -1 to remove a thin border (not sure how else to fix) */
         left: 0;
     }
 }
