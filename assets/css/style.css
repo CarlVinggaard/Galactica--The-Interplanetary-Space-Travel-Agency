@@ -72,24 +72,27 @@ img {
 
 /*------ BUTTON STYLES ------*/
 
-.btn-orange {
-    background: #FFAC2F;
+.btn-generic {
     border: 0;
     border-radius: 5px;
     color: white;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.btn-orange {
+    background: #FFAC2F;
 }
 
 .btn-readmore {
     width: 150px;
 }
 
-.btn-order {
+.btn-blue {
     background: #0033DC;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.btn-red {
+    background: rgb(235, 50, 50);
 }
 
 /*------ MENU BAR ------*/
