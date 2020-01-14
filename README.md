@@ -1,15 +1,15 @@
 # Galactica - the Interplanetary Space Travelling Agency
 
-This webpage is a user-centric frontend development assignment, which is part of the full-stack developer course at Code Institute.
+This website is a user-centric frontend development assignment, done as part of the full-stack developer course at Code Institute.
 
-It is a homepage for an imaginary future travelling agency that sells trips into space. The website displays three products that are listed on the front page, 
-described in detail on the 'journey catalogue' page, and can be purchased on the 'order' page.
+It is a homepage for Galactica, an imaginary future travelling agency that sells trips into space.
 
 The purpose of the website is to advertise the travels and persuade the customer to purchase a trip. This is done mainly by large images and catchy headlines. 
-The style of the page is colorful and exciting.
+The style of the page is colorful and exciting. The website displays three products (package trips) that are listed on the front page, described in detail on 
+the 'journey catalogue' page, and can be purchased on the 'order' page.
 
-The website is written in HTML 5 and CSS 3, and advanced features are created with custom javascript libraries. In order to make the website fully responsive,
-the frontend javascript library Bootstrap 4 has been utilised extensively.
+The website is written in HTML 5 and CSS 3, and more advanced features are created with Javascript libraries. In order to make the website fully responsive,
+the frontend component library Bootstrap 4 has been utilised extensively.
 
 ## User Experience
 
