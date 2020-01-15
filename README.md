@@ -49,6 +49,8 @@ Before writing the website, a prototype model was created to display the structu
 interface design tool. It is clickable (if you click the 'play' button in the top right corner you can interact with it). The prototype can be accessed in Figma 
 in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/Prototype?node-id=0%3A1
 
+<a href="https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/Prototype?node-id=0%3A1" target="_blank">this link</a>
+
 ## Features
 
 ### Existing Features
