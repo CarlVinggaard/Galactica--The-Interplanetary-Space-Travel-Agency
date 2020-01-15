@@ -94,15 +94,43 @@ in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/
 
 - Git
     - Used for version control during the project.
-    - Files stored on Github.
+    - Files are stored on Github.
 
 ## Testing
 
-Testing was done along the development process mainly using the developer tools in Google Chrome.
+- Testing was done along the development process mainly using the devTools in Google Chrome. 
+    - Responsiveness was tested using the device toolbar.
+    - Troubleshooting CSS was done using the styles section of devTools.
 
-Different browsers
+- Tests were done on different devices:
+    - desktop computer with wide monitor (Windows)
+    - smartphone (OnePlus 6/Android)
+    - tablet (iPad/iOS)
+    - laptop (Acer/Windows)
 
-Different devices
+- Tests were done in different browsers:
+    - Mozilla Firefox
+    - Google Chrome
+    - Safari
+
+- Important tests are:
+    - Test that the content is displayed properly on small and large screens (all three pages)
+    - Test that the navbar menu collapses on small screens
+    - Test that the collapsed navbar works correctly
+
+    - index.html:
+        - Check that the slider/carousel changes image every 8 seconds
+        - Test that the buttons on the slider link to the correct section of the journeys.html page
+        - Test that the buttons in the 'journeys' section of the front page redirect correctly
+
+    - journeys.html:
+        - Test that the buttons redirect to the order.html page
+
+    - order.html:
+        - Test that the input fields are all required by submitting an incomplete form
+        - Test that the e-mail field requirement works correctly, by submitting an invalid e-mail address (e.g. one that lacks '@')
+        - Test that the datepicker works correctly by filling out the 'From' and 'To' fields without typing the numbers
+
 
 ## Deployment
 
@@ -115,3 +143,5 @@ The process of deployment:
 3. Use the link provided to access the website
 
 ## Credits
+
+Images for the slider and journeys section were taken from: 
