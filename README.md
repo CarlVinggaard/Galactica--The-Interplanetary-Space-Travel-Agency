@@ -144,4 +144,7 @@ The process of deployment:
 
 ## Credits
 
-Images for the slider and journeys section were taken from: 
+Images used on the website are taken from:
+
+- Greetings From Mars photo series by Julien Mauve (http://www.julienmauve.com/greetings-from-mars)
+- NASA (https://nasa.gov)
