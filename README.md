@@ -9,7 +9,7 @@ displays three products (package trips) that are listed on the front page, descr
 page.
 
 The website is written in HTML5 and CSS3, and more advanced features are created with Javascript libraries. In order to make the website fully responsive,
-the frontend component library Bootstrap 4 has been used extensively.
+the frontend component library Bootstrap 4 has been used extensively. The code was written in the Gitpod IDE.
 
 ## User Experience
 
@@ -47,9 +47,7 @@ background.
 
 Before writing the website, a prototype model was created to display the structure and style of the site. The prototype is made in Figma, a standard but powerful 
 interface design tool. It is clickable (if you click the 'play' button in the top right corner you can interact with it). The prototype can be accessed in Figma 
-in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/Prototype?node-id=0%3A1
-
-<a href="https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/Prototype?node-id=0%3A1" target="_blank">this link</a>
+in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/Prototype?node-id=0%3A1.
 
 ## Features
 
@@ -100,7 +98,7 @@ in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/
 
 ## Testing
 
-Testing has been done mainly with the developer tools in Google Chrome.
+Testing was done along the development process mainly using the developer tools in Google Chrome.
 
 Different browsers
 
@@ -108,8 +106,12 @@ Different devices
 
 ## Deployment
 
-The website is deployed to GitHub pages.
+The website is deployed to GitHub pages (https://carlvinggaard.github.io/Galactica--The-Interplanetary-Space-Travel-Agency/)
 
-The process of deploying is as follows: ...
+The process of deployment:
+
+1. Go to 'Settings' in the Github repository
+2. Under section 'Github Pages', select Source: 'master branch' in the dropdown menu
+3. Use the link provided to access the website
 
 ## Credits
