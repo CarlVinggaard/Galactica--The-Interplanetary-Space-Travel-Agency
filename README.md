@@ -27,12 +27,12 @@ The functional and usability requirements for the site include:
 User flow 1: The user wants to buy a specific package trip to space. The user can go directly into the 'Journey Catalogue' in the navigation bar and find more information about 
 the trip. The user can then click 'Order' to go to the order page.
 
-Front page -> Journey Catalogue -> Order
+- 1. Front page -> 2. Journey Catalogue -> 3. Order
 
 User flow 2: The user wants to know more about his/her options for space travel. The user can see the images on the front page, and scroll down and read about the company and 
 about its technology and safety record. If the user is convinced to purchase a trip, there is a call-to-action at the bottom of the front page.
 
-Front page -> Scroll down -> Order
+- 1. Front page -> 2. Scroll down on front page -> 3. Order
 
 ### Style and Design
 
@@ -102,11 +102,13 @@ in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/
     - Responsiveness was tested using the device toolbar.
     - Troubleshooting CSS was done using the styles section of devTools.
 
+- The code was tested in the HTML and CSS code validator (https://validator.w3.org/).
+
 - Tests were done on different devices:
-    - desktop computer with wide monitor (Windows)
-    - smartphone (OnePlus 6/Android)
-    - tablet (iPad/iOS)
-    - laptop (Acer/Windows)
+    - Desktop computer with wide monitor (Windows)
+    - Smartphone (OnePlus 6/Android)
+    - Tablet (iPad/iOS)
+    - Laptop (Acer/Windows)
 
 - Tests were done in different browsers:
     - Mozilla Firefox
@@ -118,15 +120,15 @@ in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/
     - Test that the navbar menu collapses on small screens
     - Test that the collapsed navbar works correctly
 
-    - index.html:
+    - Index.html:
         - Check that the slider/carousel changes image every 8 seconds
         - Test that the buttons on the slider link to the correct section of the journeys.html page
         - Test that the buttons in the 'journeys' section of the front page redirect correctly
 
-    - journeys.html:
+    - Journeys.html:
         - Test that the buttons redirect to the order.html page
 
-    - order.html:
+    - Order.html:
         - Test that the input fields are all required by submitting an incomplete form
         - Test that the e-mail field requirement works correctly, by submitting an invalid e-mail address (e.g. one that lacks '@')
         - Test that the datepicker works correctly by filling out the 'From' and 'To' fields without typing the numbers
@@ -134,13 +136,18 @@ in the browser with the link: https://www.figma.com/file/Ok4u5aJeHJXPGIh0Y2h9iw/
 
 ## Deployment
 
-The website is deployed to GitHub pages (https://carlvinggaard.github.io/Galactica--The-Interplanetary-Space-Travel-Agency/)
+The website is deployed to GitHub pages and can be accessed at: https://carlvinggaard.github.io/Galactica--The-Interplanetary-Space-Travel-Agency/.
 
-The process of deployment:
+- The process of deployment:
+    1. Go to 'Settings' in the Github repository
+    2. Under section 'Github Pages', select Source: 'master branch' in the dropdown menu
+    3. Use the link provided to access the website
 
-1. Go to 'Settings' in the Github repository
-2. Under section 'Github Pages', select Source: 'master branch' in the dropdown menu
-3. Use the link provided to access the website
+- Local deployment:
+    1. Clone the git repository with the command: git clone https://github.com/CarlVinggaard/Galactica--The-Interplanetary-Space-Travel-Agency.git.
+    2. This will create a folder where the files can be accessed.
+
+The development and deployment versions are identical.
 
 ## Credits
 
