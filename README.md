@@ -1,4 +1,4 @@
-# Galactica - the Interplanetary Space Travelling Agency
+# Galactica - the Interplanetary Space Travel Agency
 
 This is a user-centric frontend development assignment, done as part of the full-stack developer course at Code Institute. The purpose of the project 
 is to implement and display what I have learned about responsive design and web development so far.
