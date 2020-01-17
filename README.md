@@ -3,7 +3,7 @@
 This is a user-centric frontend development assignment, done as part of the full-stack developer course at Code Institute. The purpose of the project 
 is to implement and display what I have learned about responsive design and web development so far.
 
-The project is a website for Galactica, an imaginary future travelling agency that sells trips into space. The purpose of the website is to advertise the travels 
+The project is a website for Galactica, an imaginary future travel agency that sells trips into space. The purpose of the website is to advertise the travels 
 and persuade the customer to purchase a trip. This is done mainly by large images and catchy headlines. The style of the page is colorful and exciting. The website 
 displays three products (package trips) that are listed on the front page, described in detail on the 'journey catalogue' page, and can be purchased on the 'order' 
 page.
@@ -144,8 +144,11 @@ The website is deployed to GitHub pages and can be accessed at: https://carlving
     3. Use the link provided to access the website
 
 - Local deployment:
-    1. Clone the git repository with the command: git clone https://github.com/CarlVinggaard/Galactica--The-Interplanetary-Space-Travel-Agency.git.
-    2. This will create a folder where the files can be accessed.
+
+    If you want to deploy this project on your own local computer, do the following:
+
+        1. Clone the git repository with the command: git clone https://github.com/CarlVinggaard/Galactica--The-Interplanetary-Space-Travel-Agency.git.
+        2. This will create a folder where the files can be accessed.
 
 The development and deployment versions are identical.
 
